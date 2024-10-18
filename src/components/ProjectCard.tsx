@@ -10,6 +10,7 @@ interface ProjectProps {
       extendedDescription: string;
       tags: string[];
       repoLink?: string;
+      hoverShadowColor: string;
    };
 }
 
@@ -37,9 +38,16 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
       <div>
          <div
             onClick={openModal}
-            className="bg-zinc-800 p-4 rounded-xl shadow-lg hover:shadow-eagle/40 duration-100 transition-all border border-zinc-600 cursor-pointer"
+            className={`bg-zinc-800 p-4 rounded-xl shadow-none hover:shadow-2xl ${project.hoverShadowColor} duration-200 transition-all border border-zinc-600 cursor-pointer`}
          >
-            <h3 className="text-2xl font-bold mt-0">{project.title}</h3>
+            <div className="flex items-center mb-4">
+               <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-6 h-6 object-cover mr-2 rounded-md"
+               />
+               <h3 className="text-xl font-medium mt-0">{project.title}</h3>
+            </div>
             <p className="mt-2">{project.description}</p>
             <div className="flex flex-wrap mt-4">
                {project.tags.map((tag) => (
