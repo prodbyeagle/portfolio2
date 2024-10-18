@@ -1,0 +1,82 @@
+import React, { useState } from 'react';
+import Modal from './Modal';
+
+interface ProjectProps {
+   project: {
+      id: number;
+      title: string;
+      imageUrl: string;
+      description: string;
+      extendedDescription: string;
+      tags: string[];
+      repoLink?: string;
+   };
+}
+
+const tagColors: { [key: string]: string } = {
+   HTML: 'bg-orange-500',
+   CSS: 'bg-blue-500',
+   JavaScript: 'bg-yellow-500',
+   TypeScript: 'bg-blue-600',
+   React: 'bg-cyan-500',
+   TailwindCSS: 'bg-teal-400',
+};
+
+const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
+   const [isModalOpen, setIsModalOpen] = useState(false);
+
+   const openModal = () => {
+      setIsModalOpen(true);
+   };
+
+   const closeModal = () => {
+      setIsModalOpen(false);
+   };
+
+   return (
+      <div>
+         <div
+            onClick={openModal}
+            className="bg-zinc-800 p-4 rounded-xl shadow-lg hover:shadow-eagle/40 duration-100 transition-all border border-zinc-600 cursor-pointer"
+         >
+            <h3 className="text-2xl font-bold mt-0">{project.title}</h3>
+            <p className="mt-2">{project.description}</p>
+            <div className="flex flex-wrap mt-4">
+               {project.tags.map((tag) => (
+                  <span
+                     key={tag}
+                     className={`${tagColors[tag] || 'bg-gray-600'} text-white text-xs font-semibold px-2 py-1 rounded-full mr-2`}
+                  >
+                     {tag}
+                  </span>
+               ))}
+            </div>
+         </div>
+
+         <Modal isOpen={isModalOpen} onClose={closeModal} title={project.title}>
+            <div className="flex flex-col items-center">
+               <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-32 h-32 object-cover mb-4 rounded-lg"
+               />
+               <p className="text-lg text-white text-center mb-4 break-words">
+                  {project.extendedDescription}
+               </p>
+               {project.repoLink && (
+                  <a
+                     href={project.repoLink}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-blue-500 hover:underline"
+                  >
+                     View Repository
+                  </a>
+               )}
+            </div>
+         </Modal>
+      </div>
+   );
+};
+
+export default ProjectCard;
