@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             className="w-24 h-24 rounded-full mx-auto md:mx-0 shadow-lg hover:shadow-eagle/40 duration-100 transition-all border border-zinc-600"
          />
          <h1 className="text-2xl font-bold mt-4">
-            Noah H. (<span className="eagle-text">@prodbyeagle</span>)
+            Noah (<span className="eagle-text">prodbyeagle</span>)
          </h1>
          <p className="text-md mt-2">📍 Nuremberg, 🇩🇪</p>
          <p className="text-base mr-8 italic text-zinc-500">A clever person solves a problem. A wise person avoids it.</p>
