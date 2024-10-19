@@ -11,17 +11,23 @@ interface ProjectProps {
       tags: string[];
       repoLink?: string;
       hoverShadowColor: string;
+      homepageLink?: string;
    };
 }
 
 const tagColors: { [key: string]: string } = {
-   HTML: 'bg-orange-500',
-   CSS: 'bg-blue-500',
-   JavaScript: 'bg-yellow-500',
-   TypeScript: 'bg-blue-600',
-   React: 'bg-cyan-500',
-   TailwindCSS: 'bg-teal-400',
+   HTML: 'bg-html',
+   CSS: 'bg-css',
+   JavaScript: 'bg-javascript',
+   TypeScript: 'bg-typescript',
+   React: 'bg-react',
+   TailwindCSS: 'bg-tailwind',
+   Python: 'bg-python',
+   Electron: 'bg-electron',
+   MongoDB: 'bg-mongodb',
 };
+
+
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
    const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,6 +51,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                   src={project.imageUrl}
                   alt={project.title}
                   className="w-6 h-6 object-cover mr-2 rounded-md"
+                  loading="lazy"
                />
                <h3 className="text-xl font-medium mt-0">{project.title}</h3>
             </div>
@@ -67,6 +74,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                   src={project.imageUrl}
                   alt={project.title}
                   className="w-32 h-32 object-cover mb-4 rounded-lg"
+                  loading="lazy"
                />
                <p className="text-lg text-white text-center mb-4 break-words">
                   {project.extendedDescription}
@@ -79,6 +87,16 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                      className="text-blue-500 hover:underline"
                   >
                      View Repository
+                  </a>
+               )}
+               {project.homepageLink && (
+                  <a
+                     href={project.homepageLink}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-blue-500 hover:underline"
+                  >
+                     View Website
                   </a>
                )}
             </div>
