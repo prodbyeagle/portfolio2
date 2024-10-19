@@ -40,12 +40,12 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
    const closeModal = () => {
       setIsModalOpen(false);
    };
-   
+
    return (
       <div>
          <div
             onClick={openModal}
-            className={`bg-zinc-800/70 p-4 rounded-xl shadow-none hover:shadow-7xl ${project.hoverShadowColor} duration-700 transition-all border border-zinc-600 cursor-pointer`}
+            className={`bg-zinc-800/30 p-4 rounded-xl shadow-none hover:shadow-7xl ${project.hoverShadowColor} duration-700 transition-all border border-zinc-600 cursor-pointer`}
          >
             <div className="flex items-center mb-4">
                <img
