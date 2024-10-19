@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom';
 const About: React.FC = () => {
    return (
       <div className="max-w-4xl mx-auto py-12 px-4 text-white">
-         <h1 className="text-4xl font-bold mb-6">About Me</h1>
+         <h1 className="text-2xl font-bold mb-6">About Me</h1>
          <div className="text-lg leading-relaxed">
-            <h2 className="text-3xl font-bold mb-6">Hi!</h2>
             <p>
-               I’m Noah, also known online as <span className="eagle-text hover:font-extrabold transition-all duration-1000">@prodbyeagle</span>. I’m a passionate Frontend Developer based in Nuremberg, Germany.
+               <span className="text-4xl font-bold">Hi!</span> I’m Noah, also known online as <span className="eagle-text hover:font-extrabold transition-all duration-1000">@prodbyeagle</span>. I’m a passionate Frontend Developer based in Nuremberg, Germany.
                My journey in web development started out of pure curiosity, and over the years, it evolved into a hobby that I’ve been pursuing with great enthusiasm.
             </p>
 

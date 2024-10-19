@@ -12,6 +12,7 @@ interface ProjectProps {
       repoLink?: string;
       hoverShadowColor: string;
       homepageLink?: string;
+      year: string;
    };
 }
 
@@ -39,12 +40,12 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
    const closeModal = () => {
       setIsModalOpen(false);
    };
-
+   
    return (
       <div>
          <div
             onClick={openModal}
-            className={`bg-zinc-800 p-4 rounded-xl shadow-none hover:shadow-2xl ${project.hoverShadowColor} duration-200 transition-all border border-zinc-600 cursor-pointer`}
+            className={`bg-zinc-800/70 p-4 rounded-xl shadow-none hover:shadow-7xl ${project.hoverShadowColor} duration-700 transition-all border border-zinc-600 cursor-pointer`}
          >
             <div className="flex items-center mb-4">
                <img
@@ -68,7 +69,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
             </div>
          </div>
 
-         <Modal isOpen={isModalOpen} onClose={closeModal} title={project.title}>
+         <Modal isOpen={isModalOpen} onClose={closeModal} title={`${project.title} - ${project.year}`}>
             <div className="flex flex-col items-center">
                <img
                   src={project.imageUrl}

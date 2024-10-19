@@ -6,7 +6,7 @@ import { projects } from '../data/projects';
 const Home: React.FC = () => {
    return (
       <div className="container mx-auto p-2 lg:p-8 flex flex-col md:flex-row">
-         <div className="md:w-1/3">
+         <div className="md:w-2/3">
             <Header />
          </div>
          <div className="md:w-2/3">

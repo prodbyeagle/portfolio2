@@ -14,12 +14,19 @@ module.exports = {
         python: '#306998',
         electron: '#5A5B6E',
         mongodb: '#4DB33D',
-        bird: "#70534c"
+        bird: "#70534c",
       },
       maxWidth: {
         120: '430px',
         150: '480px',
         200: '550px',
+      },
+      boxShadow: {
+        '3xl': '0 10px 30px 0px rgba(0, 0, 0, 0.5)',
+        '4xl': '0 10px 40px 0px rgba(0, 0, 0, 0.5)',
+        '5xl': '0 10px 50px 0px rgba(0, 0, 0, 0.5)',
+        '6xl': '0 15px 60px 0px rgba(0, 0, 0, 0.5)',
+        '7xl': '0 10px 380px 0px rgba(0, 0, 0, 0.5)',
       },
     },
   },

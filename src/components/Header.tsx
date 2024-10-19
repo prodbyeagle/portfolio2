@@ -36,7 +36,7 @@ const Header: React.FC = () => {
          <img
             src="https://avatars.githubusercontent.com/u/124641014?s=400&u=f4fbd8329ffdf7e2e5efb8814d37688960966e69&v=4"
             alt="Your Name"
-            className="w-24 h-24 rounded-full mx-auto md:mx-0 shadow-lg hover:shadow-eagle/40 duration-100 transition-all border border-zinc-600"
+            className="w-24 h-24 rounded-full cursor-help mx-auto md:mx-0 shadow-7xl hover:shadow-eagle/70 duration-1000 transition-all border border-zinc-600"
          />
          <h1 className="text-2xl font-bold mt-4">
             Noah (<span className="eagle-text">prodbyeagle</span>)
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
          </Link>
 
          <Modal isOpen={isModalOpen} onClose={closeModal} title="My Socials">
-            <div className="flex flex-col space-y-2 w-96 text-center">
+            <div className="flex flex-col space-y-2 w-72 text-center">
                {linksData.map((link) => (
                   <a
                      key={link.name}
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                      rel="noopener noreferrer"
                      className="bg-zinc-800 p-4 rounded-xl shadow-2xl hover:shadow-eagle/50 transition-all duration-500 border border-zinc-700 hover:-translate-y-1 transform cursor-pointer"
                   >
-                     <div className="text-xl font-semibold">{link.name}</div>
+                     <div className="text-lg sm:text-md md:text-xl font-semibold">{link.name}</div>
                   </a>
                ))}
             </div>
