@@ -10,9 +10,10 @@ interface ProjectProps {
       extendedDescription: string;
       tags: string[];
       repoLink?: string;
-      hoverShadowColor: string;
+      hoverShadowColor?: string;
+      hoverBGColor?: string;
       homepageLink?: string;
-      year: string;
+      year?: string;
    };
 }
 
@@ -28,8 +29,6 @@ const tagColors: { [key: string]: string } = {
    MongoDB: 'bg-mongodb',
 };
 
-
-
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
    const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -42,32 +41,32 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
    };
 
    return (
-      <div>
-         <div
-            onClick={openModal}
-            className={`bg-zinc-800/30 p-4 rounded-xl shadow-none hover:shadow-7xl ${project.hoverShadowColor} duration-700 transition-all border border-zinc-600 cursor-pointer`}
-         >
-            <div className="flex items-center mb-4">
-               <img
-                  src={project.imageUrl}
-                  alt={project.title}
-                  className="w-6 h-6 object-cover mr-2 rounded-md"
-                  loading="lazy"
-               />
-               <h3 className="text-xl font-medium mt-0">{project.title}</h3>
+      <div className="relative">
+            <div
+               onClick={openModal}
+               className={`bg-zinc-800/30 p-4 rounded-xl shadow-none hover:shadow-7xl ${project.hoverBGColor} ${project.hoverShadowColor} duration-1000 transition-all border border-zinc-600 cursor-pointer`}
+            >
+               <div className="flex items-center mb-4">
+                  <img
+                     src={project.imageUrl}
+                     alt={project.title}
+                     className="w-6 h-6 object-cover mr-2 rounded-md"
+                     loading="lazy"
+                  />
+                  <h3 className="text-xl font-medium mt-0">{project.title}</h3>
+               </div>
+               <p className="mt-2">{project.description}</p>
+               <div className="flex flex-wrap mt-4">
+                  {project.tags.map((tag) => (
+                     <span
+                        key={tag}
+                        className={`${tagColors[tag] || 'bg-gray-600'} text-white text-xs font-semibold px-2 py-1 rounded-full mr-2`}
+                     >
+                        {tag}
+                     </span>
+                  ))}
+               </div>
             </div>
-            <p className="mt-2">{project.description}</p>
-            <div className="flex flex-wrap mt-4">
-               {project.tags.map((tag) => (
-                  <span
-                     key={tag}
-                     className={`${tagColors[tag] || 'bg-gray-600'} text-white text-xs font-semibold px-2 py-1 rounded-full mr-2`}
-                  >
-                     {tag}
-                  </span>
-               ))}
-            </div>
-         </div>
 
          <Modal isOpen={isModalOpen} onClose={closeModal} title={`${project.title} - ${project.year}`}>
             <div className="flex flex-col items-center">

@@ -8,6 +8,7 @@ export const projects = [
       tags: ['React', 'TypeScript', 'TailwindCSS'],
       repoLink: 'https://prodbyeagle.vercel.app/',
       hoverShadowColor: 'hover:shadow-eagle/30',
+      hoverBGColor: 'hover:bg-eagle/20',
       year: "2024",
       homepageLink: 'https://prodbyeagle.vercel.app/'
    },
@@ -20,6 +21,7 @@ export const projects = [
       tags: ['React', 'TypeScript', 'TailwindCSS'],
       repoLink: 'https://github.com/prodbyeagle/potatbotat-remake',
       hoverShadowColor: 'hover:shadow-yellow-500/30',
+      hoverBGColor: 'hover:bg-yellow-500/20',
       year: "2024",
       homepageLink: 'https://potatbotat.vercel.app/'
    },
@@ -32,6 +34,7 @@ export const projects = [
       tags: ['TypeScript'],
       repoLink: 'https://github.com/prodbyeagle/grainient',
       hoverShadowColor: 'hover:shadow-blue-500/30',
+      hoverBGColor: 'hover:bg-blue-500/20',
       year: "2024",
       homepageLink: 'https://prodbyeagle.github.io/grainient/'
    },
@@ -44,6 +47,7 @@ export const projects = [
       tags: ['HTML'],
       repoLink: 'https://github.com/prodbyeagle/little-timer',
       hoverShadowColor: 'hover:shadow-white/30',
+      hoverBGColor: 'hover:bg-white/20',
       year: "2024",
    },
    {
@@ -55,6 +59,7 @@ export const projects = [
       tags: ['HTML', 'JavaScript', 'Electron'],
       repoLink: 'https://github.com/prodbyeagle/beatforge',
       hoverShadowColor: 'hover:shadow-eagle/30',
+      hoverBGColor: 'hover:bg-eagle/20',
       year: "2024",
    },
    {
@@ -66,6 +71,7 @@ export const projects = [
       tags: ['React', 'JavaScript', 'TailwindCSS'],
       repoLink: 'https://github.com/prodbyeagle/devolution',
       hoverShadowColor: 'hover:shadow-indigo-500/30',
+      hoverBGColor: 'hover:bg-indigo-500/20',
       year: "2024",
    },
    {
@@ -77,6 +83,7 @@ export const projects = [
       tags: ['JavaScript'],
       repoLink: 'https://github.com/prodbyeagle/beatforge',
       hoverShadowColor: 'hover:shadow-bird/30',
+      hoverBGColor: 'hover:bg-bird/20',
       year: "2024",
    },
    {
@@ -88,6 +95,7 @@ export const projects = [
       tags: ['React', 'MongoDB', 'TailwindCSS'],
       repoLink: 'https://github.com/prodbyeagle/egle-website',
       hoverShadowColor: 'hover:shadow-bird/30',
+      hoverBGColor: 'hover:bg-bird/20',
       year: "2024",
       homepageLink: 'https://egle-web.vercel.app/',
    },
@@ -100,6 +108,7 @@ export const projects = [
       tags: ['Python'],
       repoLink: 'https://github.com/prodbyeagle/chillyrpg',
       hoverShadowColor: 'hover:shadow-lime-700/30',
+      hoverBGColor: 'hover:bg-lime-700/20',
       year: "08/2023",
    },
    {
@@ -111,6 +120,7 @@ export const projects = [
       tags: ['Python'],
       repoLink: 'https://github.com/prodbyeagle/chilly',
       hoverShadowColor: 'hover:shadow-red-700/30',
+      hoverBGColor: 'hover:bg-red-700/20',
       year: "05/2023",
    },
 ];
