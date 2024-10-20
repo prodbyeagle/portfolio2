@@ -7,7 +7,7 @@ import About from './pages/About';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-zinc-900 text-white">
+      <div className="min-h-screen bg-zinc-900 text-white font-intertight font-medium">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
