@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Modal from './Modal';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const linksData = [
    {
@@ -27,9 +27,24 @@ const linksData = [
 
 const Header: React.FC = () => {
    const [isModalOpen, setIsModalOpen] = useState(false);
+   const navigate = useNavigate();
+   const location = useLocation();
 
-   const openModal = () => setIsModalOpen(true);
-   const closeModal = () => setIsModalOpen(false);
+   const openModal = () => {
+      setIsModalOpen(true);
+      navigate('#socials');
+   };
+
+   const closeModal = () => {
+      setIsModalOpen(false);
+      navigate(location.pathname);
+   };
+
+   useEffect(() => {
+      if (location.hash === '#socials') {
+         setIsModalOpen(true);
+      }
+   }, [location.hash]);
 
    return (
       <div className="text-center md:text-left">
@@ -39,7 +54,7 @@ const Header: React.FC = () => {
             className="w-24 h-24 rounded-full cursor-help mx-auto md:mx-0 hover:shadow-7xl hover:shadow-eagle/30 duration-1000 transition-all border border-zinc-600"
          />
          <h1 className="text-2xl font-bold mt-4">
-            Noah (<span className="eagle-text duration-4000 transition-all cursor-grabbing">prodbyeagle</span>)
+            Noah (<span className="eagle-text duration-4000 transition-all">prodbyeagle</span>)
          </h1>
          <p className="text-md mt-2">📍 Nuremberg, 🇩🇪</p>
          <p className="text-base italic text-zinc-500">A clever person solves a problem. A wise person avoids it.</p>
