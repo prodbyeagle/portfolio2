@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                      rel="noopener noreferrer"
                      className="bg-zinc-800 text-white px-4 py-2 rounded-lg shadow-md hover:bg-zinc-700 border border-zinc-600 transition-all duration-100"
                   >
-                     View Repository
+                     View Repo
                   </a>
                )}
                {project.homepageLink && (
