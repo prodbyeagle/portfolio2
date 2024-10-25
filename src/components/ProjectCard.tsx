@@ -10,6 +10,8 @@ interface ProjectProps {
       extendedDescription: string;
       tags: string[];
       repoLink?: string;
+      shadowColor?: string;
+      bgColor?: string;
       hoverShadowColor?: string;
       hoverBGColor?: string;
       homepageLink?: string;
@@ -68,8 +70,8 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
             </div>
          </div>
 
-         <Modal isOpen={isModalOpen} onClose={closeModal} title={`${project.title} - ${project.year}`}>
-            <div className="flex flex-col items-center">
+         <Modal shadowSize="6xl" className={`${project.shadowColor} ${project.bgColor}`} isOpen={isModalOpen} onClose={closeModal} title={`${project.title} - ${project.year}`}>
+            <div className={`flex flex-col items-center ${project.shadowColor}`}>
                <img
                   src={project.imageUrl}
                   alt={project.title}
