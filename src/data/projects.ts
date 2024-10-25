@@ -2,7 +2,7 @@ export const projects = [
    {
       id: 1,
       title: 'Portfolio Website',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/eagle-midnight/refs/heads/main/1f985.gif',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'This website your are on!',
       extendedDescription: 'Created with React and Tailwind CSS, this portfolio highlights my work, skills, and offers a seamless user experience, allowing visitors to easily navigate through my public projects.',
       tags: ['React', 'TypeScript', 'TailwindCSS'],
@@ -47,7 +47,7 @@ export const projects = [
    {
       id: 4,
       title: 'Little Timer',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/obs64_UIDOILaiL7.gif',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/tinytimer.webm',
       description: 'A minimal timer overlay designed for OBS.',
       extendedDescription: 'This timer overlay is perfect for streamers, allowing for easy time tracking during broadcasts with a clean and unobtrusive design that integrates seamlessly with your streaming setup.',
       tags: ['HTML'],
@@ -75,7 +75,7 @@ export const projects = [
    {
       id: 6,
       title: 'Devolution',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/devoution_logo.jpg',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/devolution.webp',
       description: 'An innovative platform for developers',
       extendedDescription: 'Devolution provides an inspiring environment for developers to showcase their projects, connect with others, and exchange knowledge. It features badges for achievements, customizable settings, a dev-blog, personalized feeds, and a clean UI.',
       tags: ['React', 'JavaScript', 'TailwindCSS'],
@@ -89,7 +89,7 @@ export const projects = [
    {
       id: 7,
       title: 'EGLE: Discord Bot',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/eagle-midnight/refs/heads/main/1f985.gif',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'A custom Discord bot for the EGLE server.',
       extendedDescription: 'This bot features a leaderboard for users with the most messages and an anti-cheat ban system, enhancing community engagement and ensuring fair play among members.',
       tags: ['JavaScript'],
@@ -103,7 +103,7 @@ export const projects = [
    {
       id: 8,
       title: 'EGLE: Website',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/eagle-midnight/refs/heads/main/1f985.gif',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'Official website for the EGLE Clan.',
       extendedDescription: 'This site provided stats and information about the server and clan battles in Pet Simulator 99, integrating with a bot to display user statistics like XP and levels.',
       tags: ['React', 'MongoDB', 'TailwindCSS'],
@@ -118,7 +118,7 @@ export const projects = [
    {
       id: 9,
       title: 'Chilly: RPG',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chillyrng.png',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chillyrng.webp',
       description: 'An RPG version of the Chilly Discord bots.',
       extendedDescription: 'This project marked my second attempt at creating a Discord bot game. After a six-month hiatus, I returned to refine the code, address bugs, and implement new features, culminating in a completed project.',
       tags: ['Python'],
@@ -132,7 +132,7 @@ export const projects = [
    {
       id: 10,
       title: 'Chilly',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chilly.png',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chilly.webp',
       description: 'My first coding project as a developer.',
       extendedDescription: 'This bot initiated my coding journey, featuring essential functionalities like leveling, banning users, and classic bot operations, laying the foundation for my future projects.',
       tags: ['Python'],
