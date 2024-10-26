@@ -21,6 +21,11 @@ module.exports = {
         150: '480px',
         200: '550px',
       },
+      maxHeight: {
+        120: '430px',
+        150: '480px',
+        200: '550px',
+      },
       fontFamily: {
         intertight: ['Inter Tight', 'Arial', 'sans-serif'],
         inter: ['Inter', 'Arial', 'sans-serif'],
