@@ -1,12 +1,27 @@
 export const projects = [
    {
       id: 1,
+      title: 'Quizer',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
+      description: 'An Tiny Quiz.',
+      extendedDescription: 'I build this Website/Game cause my friend came back to his pc and wanted to code again. So we did the same project.',
+      tags: ['React', 'TypeScript', 'TailwindCSS'],
+      repoLink: 'https://github.com/prodbyeagle/quizer',
+      shadowColor: 'shadow-cyan-500/50',
+      bgColor: 'bg-cyan-500/20',
+      hoverShadowColor: 'hover:shadow-cyan-500/50',
+      hoverBGColor: 'hover:bg-cyan-500/20',
+      year: "10/2024",
+      homepageLink: 'https://prodbyeagle-quizer.vercel.app/'
+   },
+   {
+      id: 2,
       title: 'Portfolio Website',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'This website your are on!',
       extendedDescription: 'Created with React and Tailwind CSS, this portfolio highlights my work, skills, and offers a seamless user experience, allowing visitors to easily navigate through my public projects.',
       tags: ['React', 'TypeScript', 'TailwindCSS'],
-      repoLink: 'https://prodbyeagle.vercel.app/',
+      repoLink: 'https://github.com/prodbyeagle/portfolio2',
       shadowColor: 'shadow-eagle/50',
       bgColor: 'bg-eagle/20',
       hoverShadowColor: 'hover:shadow-eagle/50',
@@ -15,7 +30,7 @@ export const projects = [
       homepageLink: 'https://prodbyeagle.vercel.app/'
    },
    {
-      id: 2,
+      id: 3,
       title: 'PotatBotat Remake',
       imageUrl: 'https://potat.app/tatoExplode.gif',
       description: 'An Remake of the PotatBotat website.',
@@ -30,7 +45,7 @@ export const projects = [
       homepageLink: 'https://potatbotat.vercel.app/'
    },
    {
-      id: 3,
+      id: 4,
       title: 'Grainient',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/grainient/refs/heads/main/site/assets/images/GrainDemo.png',
       description: 'Custom library for gradients w/ optional grain.',
@@ -45,7 +60,7 @@ export const projects = [
       homepageLink: 'https://prodbyeagle.github.io/grainient/'
    },
    {
-      id: 4,
+      id: 5,
       title: 'Little Timer',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/tinytimer.webm',
       description: 'A minimal timer overlay designed for OBS.',
@@ -59,7 +74,7 @@ export const projects = [
       year: "09/2024",
    },
    {
-      id: 5,
+      id: 6,
       title: 'BeatForge',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/BeatForge/refs/heads/main/assets/icon.png',
       description: 'An advanced beat library app for Windows.',
@@ -73,7 +88,7 @@ export const projects = [
       year: "04/2024",
    },
    {
-      id: 6,
+      id: 7,
       title: 'Devolution',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/devolution.webp',
       description: 'An innovative platform for developers',
@@ -87,7 +102,7 @@ export const projects = [
       year: "02/2024",
    },
    {
-      id: 7,
+      id: 8,
       title: 'EGLE: Discord Bot',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'A custom Discord bot for the EGLE server.',
@@ -101,7 +116,7 @@ export const projects = [
       year: "06/2024",
    },
    {
-      id: 8,
+      id: 9,
       title: 'EGLE: Website',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'Official website for the EGLE Clan.',
@@ -116,7 +131,7 @@ export const projects = [
       homepageLink: 'https://egle-web.vercel.app/',
    },
    {
-      id: 9,
+      id: 10,
       title: 'Chilly: RPG',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chillyrng.webp',
       description: 'An RPG version of the Chilly Discord bots.',
@@ -130,7 +145,7 @@ export const projects = [
       year: "08/2023",
    },
    {
-      id: 10,
+      id: 11,
       title: 'Chilly',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chilly.webp',
       description: 'My first coding project as a developer.',
