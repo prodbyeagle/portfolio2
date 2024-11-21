@@ -15,6 +15,7 @@ module.exports = {
         electron: '#5A5B6E',
         mongodb: '#4DB33D',
         bird: "#70534c",
+        nextjs: '#000000',
       },
       maxWidth: {
         120: '430px',

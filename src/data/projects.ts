@@ -1,21 +1,48 @@
 export const projects = [
    {
       id: 1,
-      title: 'Quizer',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
-      description: 'An Tiny Quiz.',
-      extendedDescription: 'I build this Website/Game cause my friend came back to his pc and wanted to code again. So we did the same project.',
-      tags: ['React', 'TypeScript', 'TailwindCSS'],
-      repoLink: 'https://github.com/prodbyeagle/quizer',
-      shadowColor: 'shadow-cyan-500/50',
-      bgColor: 'bg-cyan-500/20',
-      hoverShadowColor: 'hover:shadow-cyan-500/50',
-      hoverBGColor: 'hover:bg-cyan-500/20',
-      year: "10/2024",
-      homepageLink: 'https://prodbyeagle-quizer.vercel.app/'
+      title: 'Random Food',
+      imageUrl: 'https://fonts.gstatic.com/s/e/notoemoji/latest/1f373/512.webp',
+      description: 'Generate a random dinner idea with a single click.',
+      extendedDescription: 'This project provides inspiration for your next meal. Simply click the button to receive a random dinner suggestion. It’s perfect for those moments when you can’t decide what to cook!',
+      tags: ['NextJs', 'ShadcnUI'],
+      shadowColor: 'shadow-zinc-600/50',
+      bgColor: 'bg-zinc-600/20',
+      hoverShadowColor: 'hover:shadow-zinc-600/50',
+      hoverBGColor: 'hover:bg-zinc-600/20',
+      year: "11/2024",
+      homepageLink: 'https://randomfood-eagle.vercel.app/'
    },
    {
       id: 2,
+      title: 'WordsOfDeath',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/wordsofdeath/refs/heads/master/public/skull.webp',
+      description: 'A platform to store funny misspelled words.',
+      extendedDescription: 'WordsOfDeath is a unique website designed to store and showcase humorous misspellings and incorrect sentences. It originated as an inside joke among friends and has since evolved into a private, whitelist-only platform for documenting these linguistic mishaps.',
+      tags: ['NextJs', 'TailwindCSS'],
+      repoLink: 'https://github.com/prodbyeagle/wordsofdeath',
+      shadowColor: 'shadow-zinc-500/50',
+      bgColor: 'bg-zinc-500/20',
+      hoverShadowColor: 'hover:shadow-zinc-500/50',
+      hoverBGColor: 'hover:bg-zinc-500/20',
+      year: "11/2024",
+   },
+   {
+      id: 3,
+      title: 'WordsOfDeath Backend',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/wordsofdeath/refs/heads/master/public/skull.webp',
+      description: 'Backend infra. for the WordsOfDeath platform.',
+      extendedDescription: 'This project serves as the backbone for the WordsOfDeath website, handling all database interactions, API requests, and authentication processes. Built with scalability and performance in mind, it ensures a seamless experience for users.',
+      tags: ['TypeScript', 'Express'],
+      repoLink: 'https://github.com/prodbyeagle/wordsofdeath-backend',
+      shadowColor: 'shadow-zinc-500/50',
+      bgColor: 'bg-zinc-500/20',
+      hoverShadowColor: 'hover:shadow-zinc-500/50',
+      hoverBGColor: 'hover:bg-zinc-500/20',
+      year: "11/2024",
+   },
+   {
+      id: 4,
       title: 'Portfolio Website',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'This website your are on!',
@@ -30,7 +57,7 @@ export const projects = [
       homepageLink: 'https://prodbyeagle.vercel.app/'
    },
    {
-      id: 3,
+      id: 5,
       title: 'PotatBotat Remake',
       imageUrl: 'https://potat.app/tatoExplode.gif',
       description: 'An Remake of the PotatBotat website.',
@@ -45,7 +72,7 @@ export const projects = [
       homepageLink: 'https://potatbotat.vercel.app/'
    },
    {
-      id: 4,
+      id: 6,
       title: 'Grainient',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/grainient/refs/heads/main/site/assets/images/GrainDemo.png',
       description: 'Custom library for gradients w/ optional grain.',
@@ -60,9 +87,9 @@ export const projects = [
       homepageLink: 'https://prodbyeagle.github.io/grainient/'
    },
    {
-      id: 5,
+      id: 7,
       title: 'Little Timer',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/tinytimer.webm',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/tinytimer.gif',
       description: 'A minimal timer overlay designed for OBS.',
       extendedDescription: 'This timer overlay is perfect for streamers, allowing for easy time tracking during broadcasts with a clean and unobtrusive design that integrates seamlessly with your streaming setup.',
       tags: ['HTML'],
@@ -74,7 +101,7 @@ export const projects = [
       year: "09/2024",
    },
    {
-      id: 6,
+      id: 8,
       title: 'BeatForge',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/BeatForge/refs/heads/main/assets/icon.png',
       description: 'An advanced beat library app for Windows.',
@@ -88,7 +115,7 @@ export const projects = [
       year: "04/2024",
    },
    {
-      id: 7,
+      id: 9,
       title: 'Devolution',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/devolution.webp',
       description: 'An innovative platform for developers',
@@ -102,7 +129,7 @@ export const projects = [
       year: "02/2024",
    },
    {
-      id: 8,
+      id: 10,
       title: 'EGLE: Discord Bot',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'A custom Discord bot for the EGLE server.',
@@ -116,7 +143,7 @@ export const projects = [
       year: "06/2024",
    },
    {
-      id: 9,
+      id: 11,
       title: 'EGLE: Website',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp',
       description: 'Official website for the EGLE Clan.',
@@ -131,7 +158,7 @@ export const projects = [
       homepageLink: 'https://egle-web.vercel.app/',
    },
    {
-      id: 10,
+      id: 12,
       title: 'Chilly: RPG',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chillyrng.webp',
       description: 'An RPG version of the Chilly Discord bots.',
@@ -145,7 +172,7 @@ export const projects = [
       year: "08/2023",
    },
    {
-      id: 11,
+      id: 13,
       title: 'Chilly',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/chilly.webp',
       description: 'My first coding project as a developer.',

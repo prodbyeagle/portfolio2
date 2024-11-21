@@ -29,6 +29,7 @@ const tagColors: { [key: string]: string } = {
    Python: 'bg-python',
    Electron: 'bg-electron',
    MongoDB: 'bg-mongodb',
+   NextJs: 'bg-nextjs'
 };
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
@@ -52,10 +53,10 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-6 h-6 object-cover mr-2 rounded-md"
+                  className="object-cover w-6 h-6 mr-2 rounded-md"
                   loading="lazy"
                />
-               <h3 className="text-xl font-medium mt-0">{project.title}</h3>
+               <h3 className="mt-0 text-xl font-medium">{project.title}</h3>
             </div>
             <p className="mt-2">{project.description}</p>
             <div className="flex flex-wrap mt-4">
@@ -75,10 +76,10 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-32 h-32 object-cover mb-4 rounded-xl"
+                  className="object-cover w-32 h-32 mb-4 rounded-xl"
                   loading="lazy"
                />
-               <p className="text-lg text-white text-center mb-4 break-words">
+               <p className="mb-4 text-lg text-center text-white break-words">
                   {project.extendedDescription}
                </p>
             </div>
@@ -88,7 +89,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                      href={project.repoLink}
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="bg-zinc-800 text-white px-4 py-2 rounded-lg shadow-md hover:bg-zinc-700 border border-zinc-600 transition-all duration-100"
+                     className="px-4 py-2 text-white transition-all duration-100 border rounded-lg shadow-md bg-zinc-800 hover:bg-zinc-700 border-zinc-600"
                   >
                      View Repo
                   </a>
@@ -98,7 +99,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
                      href={project.homepageLink}
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="bg-zinc-800 text-white px-4 py-2 rounded-lg shadow-md hover:bg-zinc-700 border border-zinc-600 transition-all duration-100"
+                     className="px-4 py-2 text-white transition-all duration-100 border rounded-lg shadow-md bg-zinc-800 hover:bg-zinc-700 border-zinc-600"
                   >
                      View Website
                   </a>
