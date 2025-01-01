@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Modal from './Modal';
+import { Modal } from './Modal';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import Tooltip from './Tooltip';
+import { Tooltip } from './HomePage/Tooltip';
 
 const linksData = [
    {
@@ -26,7 +26,7 @@ const linksData = [
    }
 ];
 
-const Header: React.FC = () => {
+export const MainPage: React.FC = () => {
    const [isModalOpen, setIsModalOpen] = useState(false);
    const navigate = useNavigate();
    const location = useLocation();
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
    }, [location.hash]);
 
    return (
-      <div className="text-center md:text-left">
+      <div className="text-center">
          <Tooltip content='made by @prodbyeagle'>
             <img
                src="https://avatars.githubusercontent.com/u/124641014?s=400&u=f4fbd8329ffdf7e2e5efb8814d37688960966e69&v=4"
@@ -73,6 +73,9 @@ const Header: React.FC = () => {
          <Link to="/about" className="text-blue-500 hover:underline ml-2">
             About Me
          </Link>
+         <Link to="/projects" className="text-blue-500 hover:underline ml-2">
+            Projects
+         </Link>
 
          <Modal isOpen={isModalOpen} onClose={closeModal} title="My Socials">
             <div className="flex flex-col space-y-2 w-72 text-center">
@@ -92,5 +95,3 @@ const Header: React.FC = () => {
       </div>
    );
 };
-
-export default Header;
