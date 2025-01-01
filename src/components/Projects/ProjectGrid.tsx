@@ -14,7 +14,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => (
             ))
         ) : (
             <div className="py-12 text-center col-span-full">
-                <p className="text-lg text-zinc-400">No projects found matching your criteria</p>
+                <p className="text-lg text-neutral-400">No projects found matching your criteria</p>
             </div>
         )}
     </div>

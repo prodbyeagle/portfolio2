@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="bg-zinc-900 text-white font-inter tracking-tight">
+      <div className="bg-neutral-900 text-white font-inter tracking-tight">
         <div>
           <Navbar onOpenModal={openModal} />
           <Routes>
@@ -44,7 +44,7 @@ const App: React.FC = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative group bg-neutral-800 p-4 rounded-xl shadow-lg border border-zinc-700 overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
+                className="relative group bg-neutral-800 p-4 rounded-xl shadow-lg border border-neutral-700 overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
               >
                 <span
                   className="absolute -inset-0.5 bg-neutral-900 opacity-75 blur-md group-hover:opacity-100 transition duration-300"

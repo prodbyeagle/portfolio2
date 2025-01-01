@@ -15,7 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
     };
 
     return (
-        <nav className="bg-zinc-900/50 backdrop-blur-lg text-zinc-100 z-50 fixed top-0 left-0 w-full">
+        <nav className="bg-neutral-900/50 backdrop-blur-lg text-neutral-100 z-50 fixed top-0 left-0 w-full">
             <div className="container mx-auto flex items-center justify-between px-4 py-3">
                 <div className="flex items-center space-x-4">
                     <Tooltip content="made by @prodbyeagle">
@@ -50,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
                 </div>
 
                 <button
-                    className="md:hidden text-zinc-400 hover:text-eagle transition duration-200"
+                    className="md:hidden text-neutral-400 hover:text-eagle transition duration-200"
                     onClick={toggleMobileMenu}
                 >
                     {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
@@ -59,7 +59,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
 
             {/* this looks so dogshit haha. but im to lazy to change*/}
             {isMobileMenuOpen && (
-                <div className="absolute top-15 left-0 w-full bg-zinc-900/90 backdrop-blur-lg text-zinc-100 px-4 py-2 space-y-2">
+                <div className="absolute top-15 left-0 w-full bg-neutral-900/90 backdrop-blur-lg text-neutral-100 px-4 py-2 space-y-2">
                     <Link
                         to="/"
                         className="block hover:text-eagle transition duration-200"

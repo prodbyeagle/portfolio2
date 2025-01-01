@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <>
          <div
             onClick={() => setIsModalOpen(true)}
-            className="relative overflow-hidden transition-all border cursor-pointer group rounded-xl border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 hover:bg-zinc-800/50"
+            className="relative overflow-hidden transition-all border cursor-pointer group rounded-xl border-neutral-800 bg-neutral-900/50 hover:border-neutral-700 hover:bg-neutral-800/50"
          >
             <div className="p-4">
                <div className="flex items-center gap-2">
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                      {project.title}
                   </h3>
                </div>
-               <p className="mb-4 text-sm text-zinc-400">
+               <p className="mb-4 text-sm text-neutral-400">
                   {project.description}
                </p>
 
@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                   {project.tags.map(tag => (
                      <span
                         key={tag}
-                        className="inline-flex items-center rounded-full bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-300"
+                        className="inline-flex items-center rounded-full bg-neutral-800 px-2.5 py-1 text-xs font-medium text-neutral-300"
                      >
                         {tag}
                      </span>
@@ -63,7 +63,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                </div>
 
                <div className="space-y-4">
-                  <p className="text-zinc-300">
+                  <p className="text-neutral-300">
                      {project.extendedDescription}
                   </p>
 
@@ -71,7 +71,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                      {project.tags.map(tag => (
                         <span
                            key={tag}
-                           className="inline-flex items-center rounded-full bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-300"
+                           className="inline-flex items-center rounded-full bg-neutral-800 px-2.5 py-1 text-xs font-medium text-neutral-300"
                         >
                            {tag}
                         </span>
@@ -96,7 +96,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                         href={project.repoLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white transition-colors border rounded-lg border-zinc-700 bg-zinc-800 hover:bg-zinc-700"
+                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white transition-colors border rounded-lg border-neutral-700 bg-neutral-800 hover:bg-neutral-700"
                      >
                         <GithubLogo size={20} />
                         View Code

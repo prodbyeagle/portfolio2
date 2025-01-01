@@ -17,7 +17,7 @@ export const TagFilter: React.FC<TagFilterProps> = ({ tags, selectedTags, onTogg
                     transition-all duration-200 hover:scale-105
                     ${selectedTags.has(tag)
                         ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/20'
-                        : 'bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700'
+                        : 'bg-neutral-800/50 text-neutral-300 hover:bg-neutral-700'
                     }`}
             >
                 <Tag size={14} className={selectedTags.has(tag) ? 'animate-pulse' : ''} />

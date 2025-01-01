@@ -8,13 +8,13 @@ interface SearchBarProps {
 
 export const SearchBar: React.FC<SearchBarProps> = ({ value, onChange }) => (
     <div className="relative max-w-2xl">
-        <MagnifyingGlass className="absolute w-5 h-5 -translate-y-1/2 left-3 top-1/2 text-zinc-400" />
+        <MagnifyingGlass className="absolute w-5 h-5 -translate-y-1/2 left-3 top-1/2 text-neutral-400" />
         <input
             type="text"
             placeholder="Search projects..."
             value={value}
             onChange={(e) => onChange(e.target.value)}
-            className="w-full px-10 py-3 text-sm transition-all duration-200 border bg-zinc-800/50 border-zinc-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-zinc-500"
+            className="w-full px-10 py-3 text-sm transition-all duration-200 border bg-neutral-800/50 border-neutral-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-neutral-500"
         />
     </div>
 );

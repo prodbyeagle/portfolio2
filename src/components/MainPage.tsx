@@ -62,7 +62,7 @@ export const MainPage: React.FC = () => {
          <Tooltip delay={600} content="49.460983, 11.061859." position='left'>
             <p className="text-md mt-2">📍 Nuremberg, 🇩🇪</p>
          </Tooltip>
-         <p className="text-base italic text-zinc-500">A clever person solves a problem. A wise person avoids it.</p>
+         <p className="text-base italic text-neutral-500">A clever person solves a problem. A wise person avoids it.</p>
 
          <button
             onClick={openModal}
@@ -85,7 +85,7 @@ export const MainPage: React.FC = () => {
                      href={link.url}
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="bg-zinc-800 p-4 rounded-xl shadow-6xl hover:shadow-eagle/50 transition-all duration-106 border border-zinc-700 hover:-translate-y-1 transform cursor-pointer"
+                     className="bg-neutral-800 p-4 rounded-xl shadow-6xl hover:shadow-eagle/50 transition-all duration-106 border border-neutral-700 hover:-translate-y-1 transform cursor-pointer"
                   >
                      <div className="text-lg sm:text-md md:text-xl font-semibold">{link.name}</div>
                   </a>
