@@ -7,7 +7,7 @@ interface ProjectCardProps {
    project: Project;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
    const [isModalOpen, setIsModalOpen] = useState(false);
 
    return (
@@ -108,5 +108,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </>
    );
 };
-
-export default ProjectCard;
