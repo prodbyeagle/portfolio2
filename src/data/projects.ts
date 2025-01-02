@@ -67,15 +67,6 @@ export const projects = [
       homepageLink: 'https://prodbyeagle.github.io/grainient/'
    },
    {
-      title: 'Little Timer',
-      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/tinytimer.gif',
-      description: 'A minimal timer overlay designed for OBS.',
-      extendedDescription: 'This timer overlay is perfect for streamers, allowing for easy time tracking during broadcasts with a clean and unobtrusive design that integrates seamlessly with your streaming setup.',
-      tags: ['HTML'],
-      repoLink: 'https://github.com/prodbyeagle/little-timer',
-      year: "09/2024",
-   },
-   {
       title: 'BeatForge',
       imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/BeatForge/refs/heads/main/assets/icon.png',
       description: 'An advanced beat library app for Windows.',
