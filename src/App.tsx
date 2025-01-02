@@ -21,6 +21,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="bg-neutral-900 text-white font-inter tracking-tight">
+        <Navbar onOpenModal={openModal} />
         <div>
           <Navbar onOpenModal={openModal} />
           <Routes>
