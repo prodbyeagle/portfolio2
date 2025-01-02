@@ -18,7 +18,7 @@ export const Projects = () => {
         <div className="min-h-screen bg-neutral-900">
             <div className="container p-4 mx-auto lg:p-8">
                 <div className="max-w-6xl mx-auto space-y-8">
-                    <section className="space-y-6 mt-20">
+                    <section className="space-y-6 mt-24">
                         <div className="flex flex-col gap-4">
                             <h2 className="text-3xl font-bold text-white">Projects</h2>
                             <p className="max-w-2xl text-neutral-400">
