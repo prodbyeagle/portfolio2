@@ -16,7 +16,7 @@ export const TagFilter: React.FC<TagFilterProps> = ({ tags, selectedTags, onTogg
                 className={`px-3 py-1.5 text-sm rounded-lg flex items-center gap-1.5 
                     transition-all duration-200 hover:scale-105
                     ${selectedTags.has(tag)
-                        ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/20'
+                        ? 'bg-neutral-400 text-white shadow-lg shadow-neutral-500/20'
                         : 'bg-neutral-800/50 text-neutral-300 hover:bg-neutral-700'
                     }`}
             >
