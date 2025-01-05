@@ -5,7 +5,7 @@ import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Navbar } from './components/Navbar';
 import { Modal } from './components/Modal';
-import { GithubLogo, TwitterLogo, InstagramLogo, YoutubeLogo, DiscordLogo } from '@phosphor-icons/react';
+import { GithubLogo, YoutubeLogo, ThreadsLogo } from '@phosphor-icons/react';
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,15 +30,27 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
-
         <Modal isOpen={isModalOpen} onClose={closeModal} title="My Socials">
           <div className="flex flex-col space-y-2 w-72 text-center">
             {[
-              { name: 'GitHub', url: 'https://github.com/prodbyeagle', icon: <GithubLogo size={24} /> },
-              { name: 'Twitter', url: 'https://twitter.com/prodbyeagle', icon: <TwitterLogo size={24} /> },
-              { name: 'Instagram', url: 'https://instagram.com/prodbyeagle', icon: <InstagramLogo size={24} /> },
-              { name: 'YouTube', url: 'https://www.youtube.com/@prodbyeagle', icon: <YoutubeLogo size={24} /> },
-              { name: 'Discord', url: 'https://discord.gg/V33nExqB68', icon: <DiscordLogo size={24} /> },
+              {
+                name: 'GitHub',
+                url: 'https://github.com/prodbyeagle',
+                description: 'Let me cook!',
+                icon: <GithubLogo size={24} />
+              },
+              {
+                name: 'Threads',
+                url: 'https://threads.net/prodbyeagle',
+                description: 'yep. follow me here!',
+                icon: <ThreadsLogo size={24} />,
+              },
+              {
+                name: 'YouTube',
+                description: 'Where I drop my beats. Check it out! (rare uploads)',
+                url: 'https://youtube.com/@prodbyeagle',
+                icon: <YoutubeLogo size={24} />
+              },
             ].map((link) => (
               <a
                 key={link.name}
@@ -51,9 +63,14 @@ const App: React.FC = () => {
                   className="absolute -inset-0.5 bg-neutral-900 opacity-75 blur-md group-hover:opacity-100 transition duration-300"
                   aria-hidden="true"
                 ></span>
-                <div className="relative z-10 flex items-center justify-center space-x-2 text-lg font-semibold text-white">
-                  {link.icon}
-                  <span>{link.name}</span>
+                <div className="relative z-10 flex flex-col items-center justify-center space-y-1">
+                  <div className="flex items-center justify-center space-x-2 text-lg font-semibold text-white">
+                    {link.icon}
+                    <span>{link.name}</span>
+                  </div>
+                  {link.description && (
+                    <span className="text-sm text-gray-400">{link.description}</span>
+                  )}
                 </div>
               </a>
             ))}
