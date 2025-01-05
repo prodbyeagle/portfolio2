@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GithubLogo, XLogo, InstagramLogo, DiscordLogo, ArrowLeft, ThreadsLogo } from '@phosphor-icons/react';
+import { ArrowLeft } from '@phosphor-icons/react';
 
 export const About: React.FC = () => {
    return (
@@ -38,30 +38,6 @@ export const About: React.FC = () => {
                      Outside of coding, I enjoy gaming, spending time with friends, and diving into a variety of creative media.
                      I’m also active in the tech community, whether it’s through social media or contributing to open-source projects.
                   </p>
-               </section>
-
-               <section className="text-center">
-                  <h2 className="text-3xl font-semibold text-neutral-100">Let’s Connect</h2>
-                  <p className="text-lg text-neutral-400 mt-4">
-                     I’m not very active on social media, but feel free to connect through the links below! I’m always open to collaborating and exploring exciting new ideas.
-                  </p>
-                  <div className="flex justify-center space-x-6 mt-6">
-                     <a href="https://github.com/prodbyeagle" target="_blank" rel="noopener noreferrer">
-                        <GithubLogo className="text-3xl text-neutral-400 hover:text-white hover:scale-110 transition duration-300" />
-                     </a>
-                     <a href="https://threads.net/@prodbyeagle" target="_blank" rel="noopener noreferrer">
-                        <ThreadsLogo className="text-3xl text-neutral-400 hover:text-white hover:scale-110 transition duration-300" />
-                     </a>
-                     <a href="https://x.com/prodbyeagle" target="_blank" rel="noopener noreferrer">
-                        <XLogo className="text-3xl text-neutral-400 hover:text-white hover:scale-110 transition duration-300" />
-                     </a>
-                     <a href="https://instagram.com/prodbyeagle" target="_blank" rel="noopener noreferrer">
-                        <InstagramLogo className="text-3xl text-neutral-400 hover:text-white hover:scale-110 transition-all duration-300" />
-                     </a>
-                     <a href="https://discord.gg/V33nExqB68" target="_blank" rel="noopener noreferrer">
-                        <DiscordLogo className="text-3xl text-neutral-400 hover:text-white hover:scale-110 transition-all duration-300" />
-                     </a>
-                  </div>
                </section>
             </div>
 
