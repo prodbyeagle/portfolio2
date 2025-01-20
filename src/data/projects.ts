@@ -1,5 +1,13 @@
 export const projects = [
    {
+      title: 'EaglePasswords',
+      imageUrl: 'https://raw.githubusercontent.com/prodbyeagle/EaglePasswords/refs/heads/main/frontend/public/icon.webp',
+      description: 'A modern desktop application for Passwords and 2FA Keys.',
+      extendedDescription: 'A modern desktop application for organizing and managing your passwords. EaglePasswords helps you their beats organized, tagged, and easily accessible.',
+      tags: ['Next', 'Tailwind', 'TypeScript'],
+      year: "01/2025"
+   },
+   {
       title: 'Beatforge v2',
       imageUrl: 'https://github.com/prodbyeagle/BeatForge2/blob/main/src-tauri/icons/icon.png?raw=true',
       description: 'A modern desktop application for organizing and managing your beat library.',
